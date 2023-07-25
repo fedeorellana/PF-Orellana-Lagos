@@ -108,10 +108,19 @@ header nav ul li {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
   margin: 10px;
+  margin-top: 20%;
 }
-div .imglinksSobreMi{
-margin-top: 12%;
-margin-left: 35%;
+.descripcionsobremi{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 5%;
+}
+
+.imglinksSobreMi{
+margin-top: 15%;
+margin-left: 30%;
 }
 
 /* Objetivos */
@@ -120,46 +129,46 @@ margin-left: 35%;
 margin-top: 30px;
 }
 .contenedorInferiorObjetivos {
-  margin-top: 100px;
+  margin-top: 10%;
   margin-left: 30%;
 }
-
+.descripcionobj{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 10%;
+}
 /* Proyectos */
-
 .titulos {
   text-align: center;
   margin-top: 20px;
 }
 
 .imgProyectos {
-  width: 300px;
+  width: 200px;
   height: auto;
-  margin-left: 20px;
+}
+
+.listaproyectos {
+  list-style: none;
 }
 
 .contenedorProyectos {
-  display: flex;
-  justify-content: center;
+  display: flex; 
+  align-items: center;
+  margin-top: 10px;
 }
 
-.contenedorProyectos ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.contenedorProyectos ul li {
-  list-style: none;
-}
-.listaproyectos{
-  margin-top: 20px;
-  margin-left: 10px;
-  list-style: none;
+.contenedorProyectos p {
+  margin-bottom: 0; 
 }
 
 .contenedorInferiorProyectos {
   margin-top: 50px;
   margin-left: 35%;
 }
+
 /* Contacto */
 
 .contact {
