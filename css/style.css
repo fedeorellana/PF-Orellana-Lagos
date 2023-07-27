@@ -166,7 +166,7 @@ margin-top: 30px;
 }
 
 .contenedorInferiorProyectos {
-  margin-top: 50px;
+  margin-top: 5%;
   margin-left: 35%;
 }
 
@@ -209,7 +209,13 @@ margin-top: 300px;
  margin: 75px;
 }
 
+.boton{
+margin-left: 84%;
 
+}
+.email{
+  margin-left: 20px;
+}
 
 /* Responsive */
 
