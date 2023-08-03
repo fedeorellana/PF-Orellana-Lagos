@@ -1,346 +1,309 @@
 /* Estilos generales */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/imagenes/fondo.jpg);
-  width: 100%;
-  height: auto;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Barra de navegación */
-
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 99;
-  padding: 20px 50px;
-}
-
-header nav ul {
-  display: flex;
-  list-style: none;
-  background-color: black;
-  color: white;
-}
-
-header nav ul li {
-  margin: 0 15px;
-}
-
-.enlances {
-  color: white;
-}
-
-/* Imagen y nombre de presentación */
-
-.contenedorMedio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagen {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.imagen img {
-  width: 250px;
-  height: auto;
-  border-radius: 50%;
-  margin-top: 100px;
-}
-
-.imagen p {
-  font-size: 20px;
-  font-family: 'Coda', cursive;
-  font-weight: bold;
-}
-.imglinksInicio{
-  margin-top: -90px;
-}
-/* Imágenes con links */
-
-.contenedorInferior {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 400px;
-  gap: 10%;
-}
-
-.imglinks {
-  width: 60px;
-  height: auto;
-}
-
-
-
-
-/* Sobre Mí */
-
-.imagenSobreMi {
-  width: 170px;
-  height: auto;
-  margin-top: 20px;
-  margin-left: 46%;
-  border-radius: 50%;
-}
-
-.tituloSobreMi {
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Mulish', sans-serif;
-  margin-top: 20px;
-}
-
-.descripcion {
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-  margin: 10px;
-  margin-top: 20%;
-}
-.descripcionsobremi{
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-  margin: 10px;
-  margin-top: 5%;
-}
-
-.imglinksSobreMi{
-margin-top: 15%;
-margin-left: 30%;
-}
-
-/* Objetivos */
-.titulobj{
-  margin-left: 47%;
-margin-top: 30px;
-}
-.contenedorInferiorObjetivos {
-  margin-top: 10%;
-  margin-left: 30%;
-}
-.descripcionobj{
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-  margin: 10px;
-  margin-top: 10%;
-}
-/* Proyectos */
-.titulos {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.imgProyectos {
-  width: 200px;
-  height: auto;
-}
-
-.listaproyectos {
-  list-style: none;
-}
-
-.contenedorProyectos {
-  display: flex; 
-  align-items: center;
-  margin-top: 10px;
-}
-
-.contenedorProyectos p {
-  margin-bottom: 0; 
-}
-
-.contenedorInferiorProyectos {
-  margin-top: 5%;
-  margin-left: 35%;
-}
-
-/* Contacto */
-
-.contact {
-  text-align: center;
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-.contenedorContact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 200px;
-  margin-right: 50px;
-}
-
-.imagencontact {
-  width: 200px;
-  height: auto;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-.titulo {
-  text-align: center;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-.contenedorInferiorContact {
-  display: flex;
-  justify-content: center;
-margin-top: 300px;
-}
-.imglinks{
- margin-top:  -50px; 
- margin: 75px;
-}
-
-.boton{
-margin-left: 84%;
-
-}
-.email{
-  margin-left: 20px;
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/imagenes/fondo.jpg);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Barra de navegación */
+  
   header {
-    padding: 10px 20px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 99;;
   }
   
   header nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    list-style: none;
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+ }
+  header h1{
+    margin-top: 10px;
   }
-  div ,imagen {
-    margin-top: 20%;
+  header nav ul li {
+    margin: 0 8%;
   }
+  
+  .enlances {
+    color: white;
+  }
+  
+  /* Imagen y nombre de presentación */
   
   .contenedorMedio {
-    text-align: center;
-    padding: 10px;
-    margin-top: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   
-  .imagen {
-    margin-bottom: 10px;
+  .nombre {
+    font-size: 20px;
+    font-family: 'Coda', cursive;
+    font-weight: bold;
+    margin-right: 90px;  }
+  .imglinksInicio{
+    margin-top: -90px;
+    text-align: center;
   }
+  /* Imágenes con links */
   
   .contenedorInferior {
-    flex-direction: row;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
     align-items: center;
-   max-height: unset;
+    margin-top: 400px;
+    gap: 10%;
   }
   
   .imglinks {
-    width: 50px;
+    width: 60px;
     height: auto;
-    margin-left: 20px;
-    margin-top: -100px;
   }
   
-  .contenedorInferior a {
-    flex-basis: calc(50% - 20px);
-    max-width: 150px;
-    margin: 10px;
-    margin-bottom: 20px;
+  
+  
+  
+  /* Sobre Mí */
+  
+  
+  .tituloSobreMi {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 20px;
+    margin-right: 7%;
+  }
+
+  
+  .contenedorInferiorSobreMi{
+  margin-top: 15%;
+  margin-left: 35%;
   }
   
-  .descripcion {
-    margin: 10px;
+  /* Objetivos */
+  .titulobj{
+    margin-left: 47%;
+  margin-top: 30px;
+  }
+  .contenedorInferiorObjetivos {
+    margin-top: 15%;
+    margin-left: 35%;
+  }
+  /* Proyectos */
+  .titulos {
+    text-align: center;
+    margin-top: 20px;
   }
   
   .imgProyectos {
-    margin: 20px;
+    width: 200px;
+    height: auto;
+  }
+  
+  .listaproyectos {
+    list-style: none;
   }
   
   .contenedorProyectos {
-    flex-wrap: wrap;
+    display: flex; 
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .contenedorProyectos p {
+    margin-bottom: 0; 
+  }
+  
+  .contenedorInferiorProyectos {
+    margin-top: 5%;
+    margin-left: 35%;
+  }
+  
+  /* Contacto */
+  
+  .contact {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .contenedorContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-right: 50px;
   }
   
   .imagencontact {
-    margin: 20px auto;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .contenedorInferiorContact {
+    display: flex;
+    justify-content: center;
+  margin-top: 300px;
+  }
+  .imglinks{
+   margin-top:  -50px; 
+   margin: 75px;
+  }
+  
+  .boton{
+  margin-left: 84%;
+  
+  }
+  .email{
+    margin-left: 20px;
   }
 
-  .imglinksSobreMi{
-    margin-top: 60%;
+  
+  /* Responsive */
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px 20px;
+    }
+    
+    header nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    div ,imagen {
+      margin-top: 20%;
+    }
+    
+    .contenedorMedio {
+      text-align: center;
+      padding: 10px;
+      margin-top: -50px;
+    }
+    
+    .imagen {
+      margin-bottom: 10px;
+    }
+    
+    .contenedorInferior {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+     max-height: unset;
+    }
+    
+    .imglinks {
+      width: 50px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: -100px;
+    }
+    
+    .contenedorInferior a {
+      flex-basis: calc(50% - 20px);
+      max-width: 150px;
+      margin: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .descripcion {
+      margin: 10px;
+    }
+    
+    .imgProyectos {
+      margin: 20px;
+    }
+    
+    .contenedorProyectos {
+      flex-wrap: wrap;
+    }
+    
+    .imagencontact {
+      margin: 20px auto;
+    }
+  
+    .imglinksSobreMi{
+      margin-top: 60%;
+      margin-left: 20%;
+     }
+  .imglinksInicio{
+    margin-top: -300px;
     margin-left: 20%;
-   }
-.imglinksInicio{
-  margin-top: -300px;
-  margin-left: 20%;
-}
-
-
-.contenedorContact {
-  flex-direction: column;
-  align-items: center;
-}
-.imagencontact{
-  margin-left: 30%;
-  margin-top: -60px;
-}
-.titulo{
-  margin-left: 15%;
-}
-.contact{
-  margin-left: 15%;
-}
-
-.contenedorInferiorContact {
-  flex-wrap: wrap;
-  justify-content: center;
+  }
+  
+  
+  .contenedorContact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagencontact{
+    margin-left: 30%;
+    margin-top: -60px;
+  }
+  .titulo{
+    margin-left: 15%;
+  }
+  .contact{
+    margin-left: 15%;
+  }
+  
+  .contenedorInferiorContact {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -50px;
+  }
+  
+  .imglinks {
+    margin: 1px;
+  }
+  .contenedorInferiorProyectos{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 30%; 
+  }
+  .titulobj{
   margin-top: -50px;
-}
-
-.imglinks {
-  margin: 1px;
-}
-.contenedorInferiorProyectos{
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 15px;
-  margin-left: 30%; 
-}
-.titulobj{
-margin-top: -50px;
-margin-left: 35%;
-}
-.contenedorInferiorObjetivos{
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 15px;
-  margin-left: 30%; 
-}
-.imagenSobreMi{
-  margin-left: 30%;
-  margin-top: 20px;
-}
-.tituloSobreMi{
-  margin-top: -50px;
-}
-.contenedorInferiorSobreMi{
-  margin-left: 16%;
-  margin-top: 30px;
-}
-
-
-
-}
+  margin-left: 35%;
+  }
+  .contenedorInferiorObjetivos{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 30%; 
+  }
+  .imagenSobreMi{
+    margin-left: 30%;
+    margin-top: 20px;
+  }
+  .tituloSobreMi{
+    margin-top: -50px;
+  }
+  .contenedorInferiorSobreMi{
+    margin-left: 16%;
+    margin-top: 30px;
+  }
+  }
