@@ -1,309 +1,443 @@
-/* Estilos generales */
-* {
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
+
+/*Barra de navegacion*/
+header{
+    padding: 10px;
+}
+.menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Estilos para la barra de navegación */
+header .links_pages {
+    background-color: #777;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  header .links_pages .pages ul {
+    list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  }
+  
+  header .links_pages .pages li {
+    padding: 0 10px;
+  }
+  
+  header .links_pages .pages a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header .links_pages .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  /* Estilos para el botón de menú */
+header .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
+  }
+  
+/*Body*/
+ *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
-  
-  body {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/imagenes/fondo.jpg);
-    width: 100%;
-    height: auto;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Barra de navegación */
-  
-  header {
-    width: 100%;
-    justify-content: space-between;
-    z-index: 99;;
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style: none;
-    background-color: black;
-    color: white;
-    margin-top: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
  }
-  header h1{
+
+ body{
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+/*imagenes con links*/
+.links{
+    width: 60px;
+    margin: 0px 200px;
+}
+.imgLinks{
+    justify-content: center;
+    margin-top: 190px;
+}
+/*Incio*/
+
+.imgIncio{
+    width: 300px;
+    border-radius: 100%;
+    margin-left:2%;
+    margin-top: 20px;
+}
+.pages {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nombre {
     margin-top: 10px;
-  }
-  header nav ul li {
-    margin: 0 8%;
-  }
-  
-  .enlances {
-    color: white;
-  }
-  
-  /* Imagen y nombre de presentación */
-  
-  .contenedorMedio {
+    margin-left: -30px;
+}
+
+.links_pages {
+    background-color: #777;
+    color: #fff;
+    position: sticky;
+    margin-top: -20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav li {
+    padding: 0 60px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+nav .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav .button:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+ /*Sobre Mi*/
+
+ .titulo{
+    margin-left: 46.5%;
+ }
+
+ 
+ 
+ h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 35px;
+ }
+
+ /*Objetivos*/
+
+ .descripcionObj{
+    list-style: none;
+    justify-content: center;
+ }
+
+ /*Proyectos*/
+ section#proyectos {
+    text-align: center;
+}
+
+.imagen-proyecto {
+    display: flex;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.descripcion-proyecto {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #777;
+    color: #fff;
+}
+
+.descripcion-proyecto h3 {
+    margin-top: 0;
+}
+.descripcion-proyecto.active{
+    display: block;
+}
+
+/* Estilos para mostrar la descripción del proyecto */
+.mostrar {
+    display: block;
+}
+.imgPr{
+    width: 400px;
+    height: auto;
+    margin-top: 30px;
+}
+
+/*Contacto*/
+
+/* ... (otros estilos CSS) ... */
+
+/* Estilos para la sección Contacto */
+main .contenedorContact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado a align-items: flex-start */
+    flex-wrap: wrap;
+    margin-right: 250px;
+    margin-top: 5%;
+}
+
+main .contenedorContact .imgContact {
+    flex: 0 0 300px; /* Tamaño fijo de la imagen */
+    margin-right: 20px;
+    margin-bottom: 20px; /* Añadido margen inferior para separar el mapa */
+}
+
+main .contenedorContact .descripcionContact {
+    flex: 0;/* Toma todo el espacio restante */
+
+}
+
+.contenedorContact form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .nombre {
-    font-size: 20px;
-    font-family: 'Coda', cursive;
-    font-weight: bold;
-    margin-right: 90px;  }
-  .imglinksInicio{
-    margin-top: -90px;
-    text-align: center;
-  }
-  /* Imágenes con links */
-  
-  .contenedorInferior {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 400px;
-    gap: 10%;
-  }
-  
-  .imglinks {
-    width: 60px;
-    height: auto;
-  }
-  
-  
-  
-  
-  /* Sobre Mí */
-  
-  
-  .tituloSobreMi {
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Mulish', sans-serif;
-    margin-top: 20px;
-    margin-right: 7%;
-  }
+}
 
-  
-  .contenedorInferiorSobreMi{
-  margin-top: 15%;
-  margin-left: 35%;
-  }
-  
-  /* Objetivos */
-  .titulobj{
-    margin-left: 47%;
-  margin-top: 30px;
-  }
-  .contenedorInferiorObjetivos {
-    margin-top: 15%;
-    margin-left: 35%;
-  }
-  /* Proyectos */
-  .titulos {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .imgProyectos {
-    width: 200px;
-    height: auto;
-  }
-  
-  .listaproyectos {
-    list-style: none;
-  }
-  
-  .contenedorProyectos {
-    display: flex; 
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .contenedorProyectos p {
-    margin-bottom: 0; 
-  }
-  
-  .contenedorInferiorProyectos {
-    margin-top: 5%;
-    margin-left: 35%;
-  }
-  
-  /* Contacto */
-  
-  .contact {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 20px;
-  }
-  
-  .contenedorContact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    margin-right: 50px;
-  }
-  
-  .imagencontact {
-    width: 200px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 50%;
-  }
-  
-  .titulo {
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  
-  .contenedorInferiorContact {
-    display: flex;
-    justify-content: center;
-  margin-top: 300px;
-  }
-  .imglinks{
-   margin-top:  -50px; 
-   margin: 75px;
-  }
-  
-  .boton{
-  margin-left: 84%;
-  
-  }
-  .email{
-    margin-left: 20px;
-  }
+.contenedorContact form div {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+}
 
+.contenedorContact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contenedorContact form input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contenedorContact form .boton {
+    flex: 0 0 100%;
+}
+
+.contenedorContact form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 600px) {
+    header .links_pages {
+        padding: 5px;
+    }
+
+    header .links_pages .pages li {
+        padding: 0 10px;
+    }
   
-  /* Responsive */
-  
-  @media (max-width: 768px) {
-    header {
-      padding: 10px 20px;
+    .nombre {
+        font-size: 20px;
+        margin-top: 10%;
+        margin-left: -45%;
+    }
+
+    footer .imgLinks ul {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 1 px;
+        margin-left: -110%;
+    }
+
+    footer .imgLinks li {
+        margin-top: 50%;
+        width: 10px;
     }
     
-    header nav ul {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    div ,imagen {
-      margin-top: 20%;
-    }
-    
-    .contenedorMedio {
-      text-align: center;
+        header .links_pages .pages {
+          display: none; 
+          flex-direction: column; 
+          align-items: center; 
+          background-color: #777;
+          padding: 10px;
+          position: absolute; 
+          top: 50px; 
+          right: 10px; 
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          z-index: 1; 
+        }
+      
+        header .links_pages .pages.active {
+          display: flex; 
+        }
+      
+        header .menu-icon {
+          display: block; 
+        }
+      
+        
+        header .links_pages .pages.active ~ .menu-icon {
+          display: none;
+        }
+      
+
+    header .links_pages .pages {
+      display: none; 
+      flex-direction: column; 
+      align-items: center; 
+      background-color: #777;
       padding: 10px;
-      margin-top: -50px;
-    }
-    
-    .imagen {
-      margin-bottom: 10px;
-    }
-    
-    .contenedorInferior {
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-     max-height: unset;
-    }
-    
-    .imglinks {
-      width: 50px;
-      height: auto;
-      margin-left: 20px;
-      margin-top: -100px;
-    }
-    
-    .contenedorInferior a {
-      flex-basis: calc(50% - 20px);
-      max-width: 150px;
-      margin: 10px;
-      margin-bottom: 20px;
-    }
-    
-    .descripcion {
-      margin: 10px;
-    }
-    
-    .imgProyectos {
-      margin: 20px;
-    }
-    
-    .contenedorProyectos {
-      flex-wrap: wrap;
-    }
-    
-    .imagencontact {
-      margin: 20px auto;
+      position: absolute; 
+      top: 50px;
+      right: 10px; 
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1; 
     }
   
-    .imglinksSobreMi{
-      margin-top: 60%;
-      margin-left: 20%;
-     }
-  .imglinksInicio{
-    margin-top: -300px;
-    margin-left: 20%;
-  }
+    header .links_pages .pages.active {
+      display: flex; 
+    }
   
+    header .menu-icon {
+      display: block; 
+    }
   
-  .contenedorContact {
+    /* Ocultar el botón de menú cuando la lista de enlaces está activa */
+    header .links_pages .pages.active ~ .menu-icon {
+      display: none;
+    }
+    .imgIncio{
+        width: 150px;
+        margin-left: -15%; 
+        margin-top: 100%;
+    }
+
+    .imgSobreMi{
+        width: 50% !important; 
+
+    }
+    .imgTit{
+        margin-right:80px;
+    }
+
+    .imgObj{
+        width: 50% !important;
+    }
+.imgPr{
+    width: 100%;
+}
+.imagen-proyecto {
+    display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .imagencontact{
-    margin-left: 30%;
-    margin-top: -60px;
-  }
-  .titulo{
-    margin-left: 15%;
-  }
-  .contact{
-    margin-left: 15%;
-  }
-  
-  .contenedorInferiorContact {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -50px;
-  }
-  
-  .imglinks {
-    margin: 1px;
-  }
-  .contenedorInferiorProyectos{
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;
-    margin-left: 30%; 
-  }
-  .titulobj{
-  margin-top: -50px;
-  margin-left: 35%;
-  }
-  .contenedorInferiorObjetivos{
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;
-    margin-left: 30%; 
-  }
-  .imagenSobreMi{
-    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
+.descripcion-proyecto {
+    display: none;
     margin-top: 20px;
-  }
-  .tituloSobreMi{
-    margin-top: -50px;
-  }
-  .contenedorInferiorSobreMi{
-    margin-left: 16%;
-    margin-top: 30px;
-  }
-  }
+    padding: 10px;
+    background-color: #777;
+    color: #fff;
+    text-align: center;
+}
+
+.descripcion-proyecto h3 {
+    margin-top: 0;
+}
+
+.imagen-proyecto.active .descripcion-proyecto {
+    display: block;
+}
+
+/* Estilos para mostrar la descripción del proyecto */
+.descripcion-proyecto {
+display: none;
+margin-top: 20px;
+padding: 10px;
+background-color: #777;
+color: #fff;
+text-align: center;
+}
+
+.descripcion-proyecto h3 {
+margin-top: 0;
+}
+.mapa{
+    width: 50%;
+    margin-left: -10%;
+}
+.contenedorContact{
+    margin-left: 50%;
+}
+.descripcionContact{
+    width: 20%;
+    margin-left: -200px;
+}
+label {
+    font-size: 38px;
+}
+
+/* Ajusta el tamaño de fuente para el texto de entrada en vista responsive */
+input {
+    font-size: 14px;
+}
+
+/* Ajusta el tamaño de fuente para el texto del botón en vista responsive */
+button {
+    font-size: 14px;
+}
+footer .imgLinkscont ul {
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1 px;
+    margin-left: -110%;
+}
+
+footer .imgLinkscont li {
+    margin-top: 25%;
+    width: 10px;
+}
+}

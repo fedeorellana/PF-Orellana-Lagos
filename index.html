@@ -3,59 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mi portfolio. Inicio del portfolio">
-    <meta name="keywords" content="programacion, portfolio, trabajo, curriculum, empleado, inicio">
-    <link rel="stylesheet" href="./scss/style.css">
+    <title>Orellana Lagos- Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Orellana Lagos</title>
+    <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
     <section class="responsive">
 
-        <header id="header">
-            
-            <nav id="nav">
-                <ul id="links">
-                    <li><a href="./index.html" class="enlances">Inicio</a></li>
-                    <li><a href="./pages/sobremi.html" class="enlances">Sobre Mi</a></li>
-                    <li><a href="./pages/objetivos.html" class="enlances">Objetivos</a></li>
-                    <li><a href="./pages/proyectos.html" class="enlances">Proyectos</a></li>
-                    <li><a href="./pages/conctacto.html" class="enlances">Contacto</a></li>
-
-                </ul>
-                <h1>Mi Portfolio</h1>
+        <header>
+            <nav class="links_pages">
+                <div class="menu-icon">&#9776;</div>
+                <div class="pages">
+                    <ul>
+                        <li><a class="button" href="./index.html">Inicio</a></li>
+                        <li><a class="button" href="./pages/sobremi.html">Sobre mí</a></li>
+                        <li><a class="button" href="./pages/objetivos.html">Objetivos</a></li>
+                        <li><a class="button" href="./pages/proyectos.html">Proyectos</a></li>
+                        <li><a class="button" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </nav>
+
         </header>
         <main>
-
-            <div class="contenedorMedio">
-                <div class=>
-                    <img class="imagenInicio" src="./imagenes/foto inicio.jpg"  alt="">
-                    <p class="nombre">Federico Ezequiel Orellana Lagos</p>
-                </div>
-
-
-
+            <div class="img_Nombre">
+                <img src="./imagenes/foto inicio.jpg" class="imgIncio" alt="Tu Nombre">
+                <h1 class="nombre">Federico Ezequiel Orellana Lagos</h1>
             </div>
         </main>
-        <main>
-            <footer>
+        <footer>
+            <nav class="imgLinks">
+<ul>
+    <li><a href="https://www.instagram.com/fede_orel/"> <img src="./imagenes/instagram.png" class="links" alt=""></li></a>
+    <li><a href="https://www.linkedin.com/in/federico-ezequiel-orellana-lagos-614b87263/" ><img src="./imagenes/linkedin.png" class="links" alt=""></li></a>
+    <li><a href="https://www.twitch.tv/fedee36" ><img src="./imagenes/twitch.png" class="links" alt=""></li></a>
 
-                <div class="contenedorInferior">
-                    <div class="imglinksInicio">
-                        <a href="https://www.instagram.com/fede_orel/"><img src="./imagenes/instagram.png" class="imglinks"></a>
-                        <a href="https://www.linkedin.com/in/federico-ezequiel-orellana-lagos-614b87263/"><img
-                            src="./imagenes/linkedin.png" class="imglinks"></a>
-                            <a href="https://www.twitch.tv/fedee36"><img src="./imagenes/twitch.png" class="imglinks"></a>
-                        </div>
-                </div>
-        </main>
+</ul>
+            </nav>
         </footer>
     </section>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.querySelector(".menu-icon");
+          const pages = document.querySelector(".pages");
+      
+          menuIcon.addEventListener("click", function () {
+            pages.classList.toggle("active");
+          });
+        });
+      </script>
+    
 </body>
 
 </html>

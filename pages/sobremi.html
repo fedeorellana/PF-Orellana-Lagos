@@ -3,52 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mi portfolio. Breve explicacion de mi persona">
-    <meta name="keywords" content="programacion, portfolio, trabajo, curriculum, empleado, informacion">
+    <title>Orellana Lagos- Sobre Mí</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../scss/style.css">
-    <title>Orellana Lagos</title>
 </head>
 
 <body>
-    <header>
+    <section class="responsive">
 
-        <nav class="links">
-            <ul>
-                <li><a href="../index.html" class="enlances">Inicio</a></li>
-                <li><a href="./sobremi.html" class="enlances">Sobre Mi</a></li>
-                <li><a href="./objetivos.html" class="enlances">Objetivos</a></li>
-                <li><a href="./proyectos.html" class="enlances">Proyectos</a></li>
-                <li><a href="./conctacto.html" class="enlances">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="contenedorMedioSobreMi">
-            <p class="tituloSobreMi">Sobre Mi</p>
-            <img src="/imagenes/foto sobre mi.jpg" class="imagenSobreMi" alt="">
-            <p class="descripcionsobremi">Soy Federico, un apasionado con 1 año de
-                experiencia. Mi enfoque se centra en desarollador web full stack, y he trabajado en proyectos
-                destacados que han demostrado mi habilidad para socializar y organizacion. Siempre estoy
-                ansioso por enfrentar nuevos desafíos y seguir creciendo en mi campo.
-                Mis 3 habilidades clave serian ser responsable, organizado y puntual.
-                Busco seguir superando límites en [tu campo de especialización] y contribuir al progreso y bienestar
-                global.
-        </div>
-    </main>
-    <footer>
-        <div class="contenedorInferiorSobreMi">
-            <div class="imglinksSobreMi">
-                <a href="https://www.instagram.com/fede_orel/"><img src="/imagenes/instagram.png" class="imglinks"></a>
-                <a href="https://www.linkedin.com/in/federico-ezequiel-orellana-lagos-614b87263/"><img
-                        src="/imagenes/linkedin.png" class="imglinks"></a>
-                <a href="https://www.twitch.tv/fedee36"><img src="/imagenes/twitch.png" class="imglinks"></a>
+        <header>
+            <nav class="links_pages">
+                <div class="menu-icon">&#9776;</div>
+                <div class="pages">
+                    <ul>
+                        <li><a class="button" href="../index.html">Inicio</a></li>
+                        <li><a class="button" href="./sobremi.html">Sobre mí</a></li>
+                        <li><a class="button" href="./objetivos.html">Objetivos</a></li>
+                        <li><a class="button" href="./proyectos.html">Proyectos</a></li>
+                        <li><a class="button" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <div>
+                <div class="imgTit">
+                    <h2 class="titulo">Sobre Mí</h2>
+                    <img src="../imagenes/foto sobre mi.jpg" class="imgSobreMi" alt="Sobre Mí">
+                </div>
+                    <div class="sobre-mi-content">
+                    <p class="descripcionSobreMi">
+                        Soy Federico, un apasionado con 1 año de experiencia. Mi enfoque se centra en desarollador web
+                        full stack, y he trabajado en proyectos destacados que han demostrado mi habilidad para
+                        socializar y organizacion. Siempre estoy ansioso por enfrentar nuevos desafíos y seguir
+                        creciendo en mi campo. Mis 3 habilidades clave serian ser responsable, organizado y puntual.
+                        Busco seguir superando límites en todo el ambiente de la programacion y contribuir al progreso.
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </main>
+        <footer>
+            <nav class="imgLinks">
+                <ul>
+                    <li><a href="https://www.instagram.com/fede_orel/"> <img src="../imagenes/instagram.png"
+                                class="links" alt=""></li></a>
+                    <li><a href="https://www.linkedin.com/in/federico-ezequiel-orellana-lagos-614b87263/"><img
+                                src="../imagenes/linkedin.png" class="links" alt=""></li></a>
+                    <li><a href="https://www.twitch.tv/fedee36"><img src="../imagenes/twitch.png" class="links" alt="">
+                    </li></a>
 
+                </ul>
+            </nav>
+        </footer>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.querySelector(".menu-icon");
+          const pages = document.querySelector(".pages");
+      
+          menuIcon.addEventListener("click", function () {
+            pages.classList.toggle("active");
+          });
+        });
+      </script>
 </body>
 
 </html>

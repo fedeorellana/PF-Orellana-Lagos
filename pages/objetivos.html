@@ -3,65 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mi portfolio. Los objetivos actuales y a futuro">
-    <meta name="keywords" content="programacion, portfolio, trabajo, curriculum, empleado,objetivos">
+    <title>Orellana Lagos - Mis objetivos</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../scss/style.css">
-    <title>Orellana Lagos</title>
 </head>
 
 <body>
-    <header>
-        <nav class="links">
-            <ul id="links">
-                <li><a href="../index.html" class="enlances">Inicio</a></li>
-                <li><a href="./sobremi.html" class="enlances">Sobre Mi</a></li>
-                <li><a href="./objetivos.html" class="enlances">Objetivos</a></li>
-                <li><a href="./proyectos.html" class="enlances">Proyectos</a></li>
-                <li><a href="./conctacto.html" class="enlances">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="responsive">
 
-    <main>
+        <header>
+            <nav class="links_pages">
+                <div class="menu-icon">&#9776;</div>
+                <div class="pages">
+                    <ul>
+                        <li><a class="button" href="../index.html">Inicio</a></li>
+                        <li><a class="button" href="./sobremi.html">Sobre mí</a></li>
+                        <li><a class="button" href="./objetivos.html">Objetivos</a></li>
+                        <li><a class="button" href="./proyectos.html">Proyectos</a></li>
+                        <li><a class="button" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
 
-        <div class="contenedormedioObjetivos">
-            <h2 class="titulobj">Objetivos</h2>
-            <ul class="descripcionobj">
-                <li>Me esfuerzo por alcanzar un muy alto nivel en la programacion,
-                    desarrollando y perfeccionando mis habilidades en la programacion en general y en el orden para
-                    tener un codigo en condiciones para mis proyectos.</li>
-                <li> Busco fomentar la innovación y la creatividad en cada proyecto que
-                    emprenda, buscando soluciones frescas y efectivas que impulsen el progreso en mis paginas web
-                    creadas en el futuro.</li>
-                <li> Mi objetivo es aplicar mis conocimientos y habilidades para contribuir positivamente a lo que
-                    busque o pida el cliente abordando desafíos relevantes y generando un
-                    impacto significativo.</li>
-                <li>Me comprometo a mantenerme actualizado con las últimas tendencias y avances en
-                    el campo de la programacion, buscando oportunidades de aprendizaje continuo para seguir creciendo
-                    profesionalmente.</li>
-                <li>Busco oportunidades que me permitan crecer y desarrollarme como programador, ya sea asumiendo
-                    nuevos desafíos, liderando proyectos o colaborando con equipos inspiradores.</li>
-                    <li> Mi enfoque en estos objetivos me impulsa a seguir adelante y afrontar cada día con entusiasmo y
-                        determinación para lograr un impacto positivo en mi campo y en la comunidad que me rodea.</li>
-            </ul>
-           
+            <div>
+                <div class="imgTit">
+                    <h2 class="titulo">Objetivos</h2>
+                    <img src="../imagenes/foto objetivos.jpg" class="imgObj" alt="Sobre Mí">
+                </div>
+                <div class="objetivos">
+                    <ul class="descripcionObj">
+                        <li>Me esfuerzo por alcanzar un muy alto nivel en la programacion,
+                            desarrollando y perfeccionando mis habilidades en la programacion en general y en el orden para
+                            tener un codigo en condiciones para mis proyectos.</li>
+                        <li> Busco fomentar la innovación y la creatividad en cada proyecto que
+                            emprenda, buscando soluciones frescas y efectivas que impulsen el progreso en mis paginas web
+                            creadas en el futuro.</li>
+                        <li> Mi objetivo es aplicar mis conocimientos y habilidades para contribuir positivamente a lo que
+                            busque o pida el cliente abordando desafíos relevantes y generando un
+                            impacto significativo.</li>
+                        <li>Me comprometo a mantenerme actualizado con las últimas tendencias y avances en
+                            el campo de la programacion, buscando oportunidades de aprendizaje continuo para seguir creciendo
+                            profesionalmente.</li>
+                        <li>Busco oportunidades que me permitan crecer y desarrollarme como programador, ya sea asumiendo
+                            nuevos desafíos, liderando proyectos o colaborando con equipos inspiradores.</li>
+                            <li> Mi enfoque en estos objetivos me impulsa a seguir adelante y afrontar cada día con entusiasmo y
+                                determinación para lograr un impacto positivo en mi campo y en la comunidad que me rodea.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav class="imgLinks">
+                <ul>
+                    <li><a href="https://www.instagram.com/fede_orel/"> <img src="../imagenes/instagram.png"
+                                class="links" alt=""></li></a>
+                    <li><a href="https://www.linkedin.com/in/federico-ezequiel-orellana-lagos-614b87263/"><img
+                                src="../imagenes/linkedin.png" class="links" alt=""></li></a>
+                    <li><a href="https://www.twitch.tv/fedee36"><img src="../imagenes/twitch.png" class="links" alt="">
+                    </li></a>
 
-
-        </div>
-    </main>
-
-    <footer>
-
-        <div class="contenedorInferiorObjetivos">
-            <a href="https://www.instagram.com/fede_orel/"><img src="/imagenes/instagram.png" class="imglinks"></a>
-            <a href="https://www.linkedin.com/in/federico-ezequiel-orellana-lagos-614b87263/"><img
-                    src="/imagenes/linkedin.png" class="imglinks"></a>
-            <a href="https://www.twitch.tv/fedee36"><img src="/imagenes/twitch.png" class="imglinks"></a>
-        </div>
-    </footer>
+                </ul>
+            </nav>
+        </footer>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.querySelector(".menu-icon");
+          const pages = document.querySelector(".pages");
+      
+          menuIcon.addEventListener("click", function () {
+            pages.classList.toggle("active");
+          });
+        });
+      </script>
 </body>
 
 </html>

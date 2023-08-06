@@ -3,63 +3,126 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mi portfolio. Trabajos ya hechos y en progreso">
-    <meta name="keywords" content="programacion, portfolio, trabajo, curriculum, empleado, proyecto,">
+    <title>Orellana Lagos - Proyectos</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../scss/style.css">
-    <title>Orellana Lagos</title>
 </head>
 
 <body>
-    <header>
-        <nav class="links">
-            <ul>
-                <li><a href="../index.html" class="enlances">Inicio</a></li>
-                <li><a href="./sobremi.html" class="enlances">Sobre Mi</a></li>
-                <li><a href="./objetivos.html" class="enlances">Objetivos</a></li>
-                <li><a href="./proyectos.html" class="enlances">Proyectos</a></li>
-                <li><a href="./conctacto.html" class="enlances">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2 class="titulos">Proyectos</h2>
-        <ol class="listaproyectos">
-            <li>
-                <div class="contenedorProyectos">
-                    <img src="/imagenes/proyecto portfolio.jpg" class="imgProyectos" alt="">
-                    <p class="descripcion">En este proyecto, me pidieron hacer algo que yo quisiera, así que decidí crear mi primer portfolio utilizando HTML y CSS. Aunque sé que puede tener algunos defectos o que le falten cosas, fue una emocionante oportunidad para mostrar mis habilidades y crear un espacio para compartir mi trabajo.</p>
-                </div>
-            </li>
-            <li>
-                <div class="contenedorProyectos">
-                    <img src="/imagenes/Example_image.png" class="imgProyectos" alt="">
-                    <p class="descripcion">Esta imagen es un ejemplo, ya que actualmente solo he trabajado en un proyecto. Sin embargo, espero que pronto haya más proyectos emocionantes para compartir y así poder mejorar y ampliar este portfolio.</p>
-                </div>
-            </li>
-            <li>
-                <div class="contenedorProyectos">
-                    <img src="/imagenes/Example_image.png" class="imgProyectos" alt="">
-                    <p class="descripcion">Esta imagen también es un ejemplo, ya que actualmente solo he trabajado en un proyecto. Mi objetivo es seguir creciendo profesionalmente y agregar nuevos proyectos próximamente.</p>
-                </div>
-            </li>
-        </ol>
-        
-        
-        
-        
-    </main>
-    <footer>
+    <section class="responsive">
 
-        <div class="contenedorInferiorProyectos">
-            <a href="https://www.instagram.com/fede_orel/"><img src="/imagenes/instagram.png" class="imglinks"></a>
-            <a href="https://www.linkedin.com/in/federico-ezequiel-orellana-lagos-614b87263/"><img
-                    src="/imagenes/linkedin.png" class="imglinks"></a>
-            <a href="https://www.twitch.tv/fedee36"><img src="/imagenes/twitch.png" class="imglinks"></a>
-        </div>
-    </footer>
+        <header>
+            <nav class="links_pages">
+                <div class="menu-icon">&#9776;</div>
+                <div class="pages">
+                    <ul>
+                        <li><a class="button" href="../index.html">Inicio</a></li>
+                        <li><a class="button" href="./sobremi.html">Sobre mí</a></li>
+                        <li><a class="button" href="./objetivos.html">Objetivos</a></li>
+                        <li><a class="button" href="./proyectos.html">Proyectos</a></li>
+                        <li><a class="button" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="proyectos">
+                <div class="container">
+                    <h2 class="tituloPr">Proyectos</h2>
+                    <div class="imagen-proyecto" onclick="mostrarDescripcion('proyecto1')">
+                        <img src="../imagenes/portfolio.jpg" class="imgPr" alt="Proyecto 1">
+                        <div id="proyecto1" class="descripcion-proyecto oculto">
+                            <h3>Proyecto 1</h3>
+                            <p class="descripcionPr">En este proyecto, me pidieron hacer algo que yo quisiera, así que
+                                decidí crear mi primer
+                                portfolio utilizando HTML y CSS. Ademas debo aclarar que con el paso del tiempo este
+                                proyecto fue evolucionando agregando SCSS y poder agregar la vista responsive. Aunque sé
+                                que puede tener algunos defectos o que le falten cosas, fue una emocionante oportunidad
+                                para mostrar mis habilidades y crear un espacio para compartir mi trabajo.</p>
+                        </div>
+                    </div>
+                    <div class="imagen-proyecto" onclick="mostrarDescripcion('proyecto2')">
+                        <img src="../imagenes/Example_image.png" class="imgPr" alt="Proyecto 2">
+                        <div id="proyecto2" class="descripcion-proyecto oculto">
+                            <h3>Proyecto 2</h3>
+                            <p class="descripcionPr">Descripción del Proyecto 2 Lorem ipsum dolor sit ametLorem ipsum
+                                dolor sit amet Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Quos aliquid recusandae magnam debitis! Odio ipsum nostrum
+                                esse? Delectus sequi maxime eius quis ex earum rem nemo magni debitis. Praesentium,
+                                soluta?</p>
+                        </div>
+                    </div>
+                    <div class="imagen-proyecto" onclick="mostrarDescripcion('proyecto3')">
+                        <img src="../imagenes/Example_image.png" class="imgPr" alt="Proyecto 3">
+                        <div id="proyecto3" class="descripcion-proyecto oculto">
+                            <h3>Proyecto 3</h3>
+                            <p class="descripcionPr">Descripción del Proyecto 3 Lorem ipsum dolor sit amet Lorem ipsum
+                                dolor sit amet
+                                consectetur adipisicing elit. Quos aliquid recusandae magnam debitis! Odio ipsum nostrum
+                                esse? Delectus sequi maxime eius quis ex earum rem nemo magni debitis. Praesentium,
+                                soluta?</p>
+                        </div>
+                    </div>
+                    <div class="imagen-proyecto" onclick="mostrarDescripcion('proyecto4')">
+                        <img src="../imagenes/Example_image.png" class="imgPr" alt="Proyecto 4">
+
+                        <div id="proyecto4" class="descripcion-proyecto oculto">
+                            <h3>Proyecto 4</h3>
+                            <p class="descripcionPr">Descripción del Proyecto 4 Lorem ipsum dolor sit ametLorem ipsum
+                                dolor sit amet Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Quos aliquid recusandae magnam debitis! Odio ipsum nostrum
+                                esse? Delectus sequi maxime eius quis ex earum rem nemo magni debitis. Praesentium,
+                                soluta?</p>
+                        </div>
+                    </div>
+                    <div class="imagen-proyecto" onclick="mostrarDescripcion('proyecto5')">
+                        <img src="../imagenes/Example_image.png" class="imgPr" alt="Proyecto 5">
+
+                        <div id="proyecto5" class="descripcion-proyecto oculto">
+                            <h3>Proyecto 5</h3>
+                            <p class="descripcionPr">Descripción del Proyecto 5 Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Aliquam eligendi libero, delectus aut dolorem molestias animi voluptatem exercitationem
+                                id dolor nihil possimus voluptatibus rerum! Animi facilis mollitia sapiente modi
+                                debitis!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <nav class="imgLinks">
+                <ul>
+                    <li><a href="https://www.instagram.com/fede_orel/"> <img src="../imagenes/instagram.png"
+                                class="links" alt=""></li></a>
+                    <li><a href="https://www.linkedin.com/in/federico-ezequiel-orellana-lagos-614b87263/"><img
+                                src="../imagenes/linkedin.png" class="links" alt=""></li></a>
+                    <li><a href="https://www.twitch.tv/fedee36"><img src="../imagenes/twitch.png" class="links" alt="">
+                    </li></a>
+
+                </ul>
+            </nav>
+        </footer>
+        <script>
+            function mostrarDescripcion(id) {
+                var proyecto = document.getElementById(id);
+                proyecto.classList.toggle("active");
+            }
+        </script>
+        
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.querySelector(".menu-icon");
+          const pages = document.querySelector(".pages");
+      
+          menuIcon.addEventListener("click", function () {
+            pages.classList.toggle("active");
+          });
+        });
+      </script>
+      
 </body>
 
 </html>
